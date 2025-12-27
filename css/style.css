@@ -7814,7 +7814,8 @@ img {
 }
 
 .problem-section {
-    padding: 90px 0;
+    margin-top: 94px;
+    padding: 30px 0;
     background: linear-gradient(135deg,
             #1b0f2e 0%,
             #24143d 35%,
