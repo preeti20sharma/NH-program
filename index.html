@@ -52,10 +52,14 @@
                         क्षमता को तेज़ कर सकती हैं।
                     </h5>
                     <div class="cta-buttons">
-                        <a href="#"
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#virtualTourModal"
+                            data-bs-dismiss="modal"
                             class="cta-btn cta-dark cta-md">अगला बैच 3 महीने बाद
                             खुलेगा! <i>&nbsp;</i></a>
-                        <a href="#"
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#virtualTourModal"
+                            data-bs-dismiss="modal"
                             class="cta-btn cta-light cta-md">Join Our Free
                             Webinar
                             <i>&nbsp;</i></a>
@@ -116,6 +120,7 @@
             </div>
         </section>
 
+        <!-- mobile form -->
         <section class="d-block d-sm-none">
             <div class="rts-application-form" style="width: 100%;">
                 <div class="rts-application-form-content">
@@ -138,7 +143,6 @@
                             </div>
                         </div>
                         <div class="rts-input rt-flex">
-
                             <div class="single-input">
                                 <input type="number" name="phone" id="Phone"
                                     placeholder="Phone" required>
@@ -147,12 +151,12 @@
                         <button type="submit"
                             class="rts-theme-btn rts-nbg-btn btn-arrow v2 full-btn">Join
                             Our Free webinar
-                            <span><i
-                                    class="fa-sharp fa-regular fa-arrow-right"></i></span></button>
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
+        <!-- mobile form end -->
 
         <!-- FUTURE CHILD SECTION -->
         <section class="future-child-section">
@@ -297,7 +301,9 @@
                             Proven Techniques · International Mind Labs
                             Inspired
                         </div>
-                        <a href="#" class="light-btn">
+                        <a data-bs-toggle="modal"
+                            data-bs-target="#virtualTourModal"
+                            data-bs-dismiss="modal" class="light-btn">
                             Join Our Free Webinar →
                         </a>
                     </div>
@@ -492,10 +498,9 @@
                     </h2>
 
                     <p class="cta-subtext">
-                        Har parent sapna dekhta hai…
-                        par sirf wahi parents action lete hain
-                        jo apne bachche ke future ko sach mein badalna chahte
-                        hain.
+                        Har parent sapna dekhta hai… par sirf wahi parents
+                        Action lete hain jo
+                        apne बच्चे के future को सच में बदलना चाहते हैं
                     </p>
 
                     <div class="seat-alert">
@@ -518,7 +523,9 @@
                         </div>
                     </div>
 
-                    <a href="#" class="cta-button">
+                    <a data-bs-toggle="modal"
+                        data-bs-target="#virtualTourModal"
+                        data-bs-dismiss="modal" class="cta-button">
                         👉 Join Free Webinar
                     </a>
 
@@ -544,6 +551,7 @@
             </div>
         </section>
 
+        <!-- modal form -->
         <div class="modal fade" id="virtualTourModal" tabindex="-1"
             role="dialog" aria-labelledby="virtualTourModalLabel"
             aria-hidden="true">
@@ -564,7 +572,7 @@
                             <!-- Left Side Image -->
                             <div class="col-md-6 d-none d-md-block">
                                 <img
-                                    src="assets/images/asobo_img/about4.jpg"
+                                    src="images/adv/img6.png"
                                     alt="Brochure Image"
                                     class="img-fluid modal-Img ">
                             </div>
@@ -614,8 +622,7 @@
                                             <button type="submit"
                                                 class="rts-theme-btn rts-nbg-btn btn-arrow v2 full-btn">
                                                 Join Our Free Webinar
-                                                <span><i
-                                                        class="fa-sharp fa-regular fa-arrow-right"></i></span></button>
+                                            </button>
                                         </form>
                                     </div>
                                 </div>
@@ -625,11 +632,18 @@
                 </div>
             </div>
         </div>
-
+        <!-- modal form end-->
         <!--Import jQuery before materialize.js-->
         <script src="js/main.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+        $(document).ready(() => {
+            setTimeout(() => {
+                $('#virtualTourModal').modal('show');
+            }, 3000);
+        })
+    </script>
     </body>
 
 </html>
