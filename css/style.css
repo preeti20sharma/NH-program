@@ -8612,3 +8612,183 @@ img {
     font-size: 20px;
     color: #e5e7eb;
 }
+
+/* Wrapper */
+.rts-application-form {
+    background: radial-gradient(circle at top, #1a0628, #0b0415);
+    padding: 28px 18px;
+    border-radius: 20px;
+}
+
+/* Content box */
+.rts-application-form-content {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 25px 20px;
+    border-radius: 16px;
+    border: 2px dashed rgba(255, 106, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.heading-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+
+/* Input container */
+.rts-input {
+    margin-bottom: 16px;
+}
+
+/* Input field */
+.single-input input {
+    width: 100%;
+    height: 52px;
+    background: #0f172a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 0 16px;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder */
+.single-input input::placeholder {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+/* Focus state */
+.single-input input:focus {
+    outline: none;
+    border-color: #ff6a00;
+    box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.25);
+    background: #020617;
+}
+
+/* Button */
+.rts-theme-btn.full-btn {
+    width: 100%;
+    margin-top: 10px;
+    height: 54px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff1a1a, #d90000);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Button hover / tap */
+.rts-theme-btn.full-btn:hover,
+.rts-theme-btn.full-btn:active {
+    transform: translateY(-2px);
+}
+
+/* Arrow icon */
+.rts-theme-btn.full-btn i {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.rts-theme-btn.full-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* Remove number arrows (mobile) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIXES
+   ========================= */
+
+/* Ensure section doesn't overflow */
+@media (max-width: 575px) {
+    section.d-block.d-sm-none {
+        padding: 15px;
+        overflow-x: hidden;
+    }
+}
+
+/* Main form wrapper */
+@media (max-width: 575px) {
+    .rts-application-form {
+        width: 100% !important;
+        padding: 18px 12px;
+        border-radius: 16px;
+    }
+}
+
+/* Inner content */
+@media (max-width: 575px) {
+    .rts-application-form-content {
+        padding: 18px 14px;
+        border-radius: 14px;
+    }
+}
+
+/* Heading responsive */
+@media (max-width: 575px) {
+    .heading-title {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+}
+
+/* Inputs spacing */
+@media (max-width: 575px) {
+    .rts-input {
+        margin-bottom: 12px;
+    }
+}
+
+/* Input fields */
+@media (max-width: 575px) {
+    .single-input input {
+        height: 48px;
+        font-size: 14px;
+        padding: 0 14px;
+    }
+}
+
+/* Button fix */
+@media (max-width: 575px) {
+    .rts-theme-btn.full-btn {
+        height: auto;
+        padding: 14px 18px;
+        font-size: 15px;
+        line-height: 1.2;
+        border-radius: 32px;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+/* Prevent button text overflow */
+@media (max-width: 575px) {
+    .rts-theme-btn.full-btn span {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+/* Prevent any horizontal scroll */
+@media (max-width: 575px) {
+    body {
+        overflow-x: hidden;
+    }
+}
